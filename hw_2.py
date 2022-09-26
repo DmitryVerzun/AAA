@@ -7,9 +7,9 @@ class CountVectorizer:
     Methods
     fit_transform(corpus)
         Computes document-term matrix from a list of phrases
-        
+
      get_feature_names()
-        Returns the list of feature names, provided 
+        Returns the list of feature names, provided
         fit_transform has already been called"""
 
     def fit_transform(self, corpus: List[str]) -> List[List[int]]:
@@ -23,7 +23,7 @@ class CountVectorizer:
                 row.append(phrase.count(feature))
             matrix.append(row)
             row = []
-        
+
         return matrix
 
     def get_feature_names(self) -> List[str]:
@@ -39,8 +39,8 @@ class CountVectorizer:
 
 if __name__ == "__main__":
     corpus = [
-    'Crock Pot Pasta Never boil pasta again',
-    'Pasta Pomodoro Fresh ingredients Parmesan to taste'
+    "Crock Pot Pasta Never boil pasta again",
+    "Pasta Pomodoro Fresh ingredients Parmesan to taste"
     ]
     vectorizer = CountVectorizer()
     count_matrix = vectorizer.fit_transform(corpus)
