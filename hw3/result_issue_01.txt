@@ -1,0 +1,12 @@
+Trying:
+    encode('SOS')  # doctest: +NORMALIZE_WHITESPACE
+Expecting:
+    '... ---  ...'
+ok
+1 items had no tests:
+    __main__
+1 items passed all tests:
+   1 tests in __main__.encode
+1 tests in 2 items.
+1 passed and 0 failed.
+Test passed.

@@ -1,0 +1,9 @@
+test_current_response (issue_05.TestCurrentYear) ... ok
+test_invalid (issue_05.TestCurrentYear) ... ok
+test_other_format (issue_05.TestCurrentYear) ... ok
+test_past (issue_05.TestCurrentYear) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.008s
+
+OK

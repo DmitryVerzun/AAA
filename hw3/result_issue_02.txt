@@ -1,0 +1,28 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.1.3, pluggy-1.0.0
+rootdir: /home/chibichihiro/Desktop/AAA/hw3
+plugins: anyio-3.5.0
+collected 3 items
+
+issue_02.py ..F                                                          [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_decode[-.--FAILS] ____________________________
+
+morse_message = '-.-', expected_output = 'FAILS'
+
+    @pytest.mark.parametrize("morse_message, expected_output", [
+            ("... --- ...", "SOS"),
+            (".... ..", "HI"),
+            ("-.-", "FAILS")
+        ])
+    def test_decode(morse_message, expected_output):
+>       assert decode(morse_message) == expected_output
+E       AssertionError: assert 'K' == 'FAILS'
+E         - FAILS
+E         + K
+
+issue_02.py:43: AssertionError
+=========================== short test summary info ============================
+FAILED issue_02.py::test_decode[-.--FAILS] - AssertionError: assert 'K' == 'F...
+========================= 1 failed, 2 passed in 0.04s ==========================

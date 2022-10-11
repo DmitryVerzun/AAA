@@ -1,0 +1,9 @@
+test_cat (issue_03.TestFitTransform) ... ok
+test_error_mes (issue_03.TestFitTransform) ... ok
+test_no_args (issue_03.TestFitTransform) ... ok
+test_order (issue_03.TestFitTransform) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+OK
