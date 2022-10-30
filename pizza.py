@@ -86,6 +86,7 @@ def menu() -> None:
 @click.option("--delivery", default=False, is_flag=True)
 @click.argument("pizza", nargs=1)
 def order(pizza: str, delivery: bool) -> None:
+    """Order pizza with delivery or without!"""
     if delivery:
         bake(pizza)
         deliver(pizza)
